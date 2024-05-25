@@ -6,7 +6,7 @@ function Input({ className, classNameInput,  placeholder, inputChange, value, ty
     return (
         <div className={
             (className || '') + 
-            ` w-full`
+            ` w-full space-y-2`
         }>
             <input 
                 className={classNameInput || '' + 
@@ -29,9 +29,9 @@ function Input({ className, classNameInput,  placeholder, inputChange, value, ty
                 type={type || 'text'}
                 {...children}
              />
-             {
-                errMessage && <small>{ errMessage }</small>
-             }
+            {
+                errMessage && <small className='text-error font-extralight italic'>{ errMessage }</small>
+            }
         </div>
      )
 }

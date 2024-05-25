@@ -18,11 +18,15 @@ module.exports = {
         'primary': '#f9ab00',
         'input-place': '#a7a4aa',
         'hover': '#f9ab000d',
+        'error': '#ef4444',
+        'warning': '#f97316',
+        'success': '#22c55e',
+        'white': '#fff',
       },
-      spacing: {
-        'text': '1rem',
-        // Thêm các giá trị pixel chuẩn khác nếu cần
-      },
+      // spacing: {
+      //   'text': '1rem',
+      //   // Thêm các giá trị pixel chuẩn khác nếu cần
+      // },
     },
   },
   plugins: [],

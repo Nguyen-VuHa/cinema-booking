@@ -1,7 +1,10 @@
+"use client"
+
 import React from 'react';
+import Button from '~/components/ui/Button';
 import Input from '~/components/ui/Input';
 
-function SignInPage(props) {
+function SignInPage() {
     return (
         <div className='w-full h-full flex flex-col justify-center items-center'>
             <div 
@@ -11,8 +14,11 @@ function SignInPage(props) {
             >
                 <Input 
                     className='w-full'
-
+                    errMessage="Trường này bắt buộc"
                 />
+                <Button>
+                    Đăng Nhập
+                </Button>
            </div>
         </div>
     );
