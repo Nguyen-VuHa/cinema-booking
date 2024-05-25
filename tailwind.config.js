@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,9 +10,18 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'auth-layout': "url('/background-cinema.jpg')",
+      },
+      colors: {
+        'layout-primary': '#1a191f',
+        'layout-second': '#222028',
+        'primary': '#f9ab00',
+        'input-place': '#a7a4aa',
+        'hover': '#f9ab000d',
+      },
+      spacing: {
+        'text': '1rem',
+        // Thêm các giá trị pixel chuẩn khác nếu cần
       },
     },
   },
